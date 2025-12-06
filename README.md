@@ -12,21 +12,21 @@ python warehouse-robot.py
 ## Ortam tasarımı
 Ortam 6x6 bir grid:
 
-Robot başlangıcı → (0,0)
-Çıkış noktası → (5,5)
+* Robot başlangıcı → (0,0)
+* Çıkış noktası → (5,5)
 
-3 palet → her episode’da rastgele
+* 3 palet her episode’da rastgele hücrelerde belirir
 
-Robot dört yöne hareket edebilir
+* Robot dört yöne hareket edebilir
 
-Palet üstüne gelindiğinde otomatik olarak toplanır
+* Palet üstüne gelindiğinde otomatik olarak toplanır
 
 ## Aksiyon Uzayı
 | Aksiyon | Açıklama |
 | ------- | -------- |
-| 0       | Yukarı     |
-| 1       | Aşağı   |
-| 2       | Sola   |
+| 0       | Yukarı   |
+| 1       | Aşağı    |
+| 2       | Sola     |
 | 3       | Yukarı   |
 
 Pickup aksiyonu yoktur, paletin üstüne gelmek yeterlidir.
