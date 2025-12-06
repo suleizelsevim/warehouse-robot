@@ -66,6 +66,7 @@ Success count  : 100
 Success rate   : 100.0%
 Avg reward     : 108.59
 >Ajan %100 başarı oranına ulaşmıştır.
+
 ![](https://github.com/suleizelsevim/warehouse-robot/blob/master/warehouse.gif)
 
 
