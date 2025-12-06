@@ -56,15 +56,23 @@ Bu sayede yalnızca gerçekten ziyaret edilen durumlar Q-tablosunda yer alır.
 | episodes  | 170000     | Eğitim sayısı       |
 | max_steps | 250        | Her bölümde maksimum adım |
 
+## Eğitim Logları
+Her 10.000 bölümde performans raporu yazdırılır. Eğitim ilerledikçe robot paketlere daha hızlı ulaşmayı ve gereksiz dolaşmamayı öğrenir.
+Aşağıdaki grafik ajanımın eğitim süreci boyunca ortalama ödül değerlerinin nasıl geliştiğini göstermektedir. Eğitimin ilk aşamalarında ajan hem ortamı hem de palet yerleşimlerini keşfettiği için ödüller daha düşüktür. Episode sayısı arttıkça epsilon azalarak keşif oranı azalır, ajan öğrendiği davranışları daha fazla uygular ve ortalama ödül düzenli şekilde yükselir.
+
+![](https://github.com/suleizelsevim/warehouse-robot/blob/master/grafik.jpg)
+
 ## Test Sonuçları
 
 Eğitilen ajan 100 episode boyunca test edildi
-
+```bash
 === EVALUATION RESULTS ===
 Episodes       : 100
 Success count  : 100
 Success rate   : 100.0%
 Avg reward     : 108.59
+```
+
 >Ajan %100 başarı oranına ulaşmıştır.
 
 ![](https://github.com/suleizelsevim/warehouse-robot/blob/master/warehouse.gif)
